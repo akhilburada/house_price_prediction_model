@@ -1,0 +1,26 @@
+AWS Glue ETL Jobs
+What It Is: A job that automatically extracts data, transforms it (e.g., cleans or formats it), and loads it into another location.
+How It Works: You create a script (in Python or Scala) to perform these tasks. You can write it yourself or use Glue Studio to generate it.
+Example: You have raw sales data in Amazon S3, and you want to clean it and put it into Amazon Redshift for analysis. An ETL job does this for you.
+AWS Glue Studio
+What It Is: A visual tool to create and manage ETL jobs without needing to write code.
+How It Works: You use a drag-and-drop interface to design how data should be processed.
+Example: Instead of writing a script, you drag and drop elements to set up how you want to clean and transform your data.
+AWS Glue DataBrew
+What It Is: A visual tool for cleaning and preparing data.
+How It Works: You interactively apply transformations and cleaning steps to your data without writing code.
+Example: If you have messy data, you use DataBrew to clean it up by removing errors and formatting it correctly.
+AWS Glue Workflows
+What It Is: A way to manage and automate a sequence of ETL tasks.
+How It Works: You set up a workflow that defines the order and dependencies of multiple ETL jobs and other tasks.
+Example: You can create a workflow to first update metadata with a crawler, then clean data with an ETL job, and finally load the data into a database.
+AWS Glue Triggers
+What It Is: Mechanisms that start ETL jobs based on specific conditions or schedules.
+How It Works: Triggers automatically run jobs when something happens, like when new data arrives or at a scheduled time.
+Example: You set a trigger to start a data cleaning job every night or whenever new data is added to an S3 bucket.
+Summary:
+ETL Jobs: Automate data extraction, transformation, and loading.
+Glue Studio: Visual tool for creating ETL jobs without coding.
+DataBrew: Interactive tool for cleaning and preparing data.
+Workflows: Manage and automate sequences of ETL tasks.
+Triggers: Automatically start jobs based on events or schedules.
